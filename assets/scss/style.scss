@@ -1,177 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Inria+Serif|Playfair+Display&display=swap');
+
+$header-font: 'Inria Serif', serif;
+$regular-font: 'Playfair Display', serif;
+
 html {
-  background-color: black;
+  h1, h2 {
+    font-family: $header-font;
+    font-size: 25px;
+  }
+
+  a, p {
+    font-family: $regular-font;
+    font-size: 18px;
+  }
+
+  body {
+    margin-top: 120px;
+  }
 }
-// 
-// // navigation section starts here
-// nav {
-//   background: rgba(255, 255, 255, 0.08);
-//   position: fixed;
-//   width: 100%;
-//   z-index: 2;
-//
-//   .menu-container {
-//     display: flex;
-//     align-items: center;
-//     padding: 40px 10%;
-//
-//     h3 {
-//       color: #fff;
-//       // font-family: $paragraph;
-//     }
-//
-//     .menu-divider {
-//       flex: 1;
-//     }
-//
-//     .menu-items {
-//       ul {
-//         padding: 0;
-//         margin: 0;
-//         list-style-type: none;
-//
-//         li {
-//           border: 2px solid transparent;
-//
-//           a {
-//             font-size: 20px;
-//             text-decoration: none;
-//           }
-//
-//           &:hover, &.active {
-//             border-bottom: 2px solid #fff;
-//           }
-//         }
-//       }
-//     }
-//
-//     .menu-button {
-//       display: inline-block;
-//       height: 30px;
-//       width: 30px;
-//
-//       .bar {
-//         height: 1px;
-//         background-color: #fff;
-//         margin: 7px 0;
-//         transition: 0.4s;
-//       }
-//
-//       &.show {
-//         .bar {
-//           background-color: #000;
-//         }
-//
-//         .top {
-//           transform: rotate(-45deg) translate(-4px, 7px);
-//         }
-//
-//         .middle {
-//           opacity: 0;
-//         }
-//
-//         .bottom {
-//           transform: rotate(45deg) translate(-4px, -7px);
-//         }
-//       }
-//     }
-//   }
-//
-//   &.scrolled {
-//     background-color: #fff;
-//
-//     .menu-container {
-//       h3 {
-//         color: #000;
-//       }
-//
-//       .menu-items {
-//         ul {
-//           li {
-//             a {
-//               color: #000;
-//             }
-//
-//             &:hover, &.active {
-//               border-bottom: 2px solid #000;
-//             }
-//           }
-//         }
-//       }
-//
-//       .menu-button {
-//         .bar {
-//           background-color: #000;
-//         }
-//       }
-//     }
-//   }
-// }
-//
-// @media only screen and (max-width:894px) {
-//   nav {
-//     .menu-container {
-//       .menu-items {
-//         position: absolute;
-//         background: #fff;
-//         height: 100vh;
-//         width: 100vw;
-//         top: 0;
-//         right: 0;
-//         transition: transform 0.2s ease-out;
-//         transform: translateX(100%);
-//
-//         ul {
-//           position: absolute;
-//           flex-direction: column;
-//           text-align: center;
-//           top: 50%;
-//           left: 50%;
-//           transform: translate(-50%, -50%);
-//
-//           li {
-//             padding: 10px 0;
-//             margin: 10px 0;
-//
-//             a {
-//               color: #000;
-//             }
-//
-//             &.active {
-//               border-bottom: 2px solid #000;
-//             }
-//           }
-//         }
-//
-//         &.show {
-//           transform: translateX(0%);
-//         }
-//       }
-//
-//       .menu-button {}
-//     }
-//   }
-// }
-//
-// @media only screen and (min-width:895px) {
-//   nav {
-//     .menu-container {
-//       .menu-items {
-//         ul {
-//           li {
-//             padding: 5px 15px;
-//             display: inline;
-//
-//             a {
-//               color: #fff;
-//             }
-//           }
-//         }
-//       }
-//
-//       .menu-button {
-//         display: none;
-//       }
-//     }
-//   }
-// }
-// // navigation section ends here
+
+.navbar {
+  background: #fff;
+}
+
+@media (max-width:425px) {
+  .navbar {
+    padding: 30px 5%;
+  }
+}
+
+@media  (min-width:426px) {
+  .navbar {
+    padding: 30px 10%;
+  }
+}
