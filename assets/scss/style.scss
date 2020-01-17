@@ -13,24 +13,4 @@ html {
     font-family: $regular-font;
     font-size: 18px;
   }
-
-  body {
-    margin-top: 120px;
-  }
-}
-
-.navbar {
-  background: #fff;
-}
-
-@media (max-width:425px) {
-  .navbar {
-    padding: 30px 5%;
-  }
-}
-
-@media  (min-width:426px) {
-  .navbar {
-    padding: 30px 10%;
-  }
 }
